@@ -1,0 +1,4 @@
+Ubuntu: 24.04 LTS x86_64
+Node.js: v24.18.0
+OpenClaw: 2026.7.1-2
+Model: tamus/protected.gpt-4o
