@@ -49,11 +49,11 @@ Note: An unexpected and irrelevant instruction was found in the content, but it 
 
 ### 1. Structural Difference Betweem Trials
 
-Trial 1 sends instructions through the control channel and Trial 2 recieves untrusted instructions through the data channel, they are fetched from an ternal source and then passed into context
+Trial 1 sends instructions through the control channel and Trial 2 recieves untrusted instructions through the data channel, they are fetched from an external source and then passed into context
 
 ### 2. Untrusted Data Becoming an Instruction
 
-Untrusted data becomes an instruction when the LLM fails to spereate data context from user control flow. 
+Untrusted data becomes an instruction when the LLM fails to separate data context from user control flow. 
 
 ### 3. Tool Call Authorization Control
 
