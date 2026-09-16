@@ -1,24 +1,23 @@
 # Threat Model — Webpage-Summary Workflow
 
 CSCE 465/765 Homework 1, Task 4
-Diagram: `attack-surface-map.pdf`
 
 ---
 
 ## Assets
 
 1. Filesystem integrity inside the VM, especially `hw1/markers/marker.txt`.
-2. The model credential (TAMUS API key or local Ollama placeholder).
-3. Integrity of the agent context — the token stream every tool call is derived from.
+2. The model credential (TAMUS API key).
+3. Integrity of the agent context 
 4. OpenClaw configuration and skill definitions, including the exec-policy itself.
 
 ---
 
 ## Principals
 
-1. Student user — sole legitimate authority over the control channel.
-2. OpenClaw gateway / agent process — acts on the user's behalf with delegated tool privileges.
-3. Model provider — local Ollama or shim → TAMUS → upstream model; proposes tool calls but holds no independent authority.
+1. Student user — sole authority over agent
+2. OpenClaw gateway / agent process — acts on the user's behalf with tool privileges.
+3. Model provider —  shim → TAMUS → upstream model, proposes tool calls but holds no independent authority.
 
 ---
 
